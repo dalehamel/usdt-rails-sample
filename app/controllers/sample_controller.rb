@@ -1,6 +1,3 @@
-require 'ruby-static-tracing'
-require 'ruby-static-tracing/tracer/concerns/latency_tracer'
-
 class SampleController < ApplicationController
   def all
     1000.times do
