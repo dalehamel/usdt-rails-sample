@@ -2,6 +2,8 @@ require_relative 'boot'
 
 require 'rails/all'
 
+require 'ruby-static-tracing'
+
 StaticTracing.configure do |config|
   config.add_tracer(StaticTracing::Tracer::Latency)
 end
